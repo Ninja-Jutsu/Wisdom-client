@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jersey+25+Charted&family=Poetsen+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* fonts */
+
+.arabic-text-font {
+  font-family: 'Cairo', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.paragraph-title-font {
+  font-family: 'Jersey 25 Charted', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General */
+.postCard {
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
+  gap: 5px;
+  color: white;
+}
+.postCard > div {
+  margin-left: 5px;
+}
+
+.post_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.post_header .user {
+  font-size: 0.5em;
+  text-decoration: underline blue 2px;
+}
+.postCard a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.postTitle {
+  font-size: 1.5em;
+  border-bottom: 1px solid darkgrey;
+  flex-grow: 1;
+  justify-self: start;
+}
+.post_body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post_body_separator {
+  border-bottom: 0.5px solid grey;
+}
+
+/* Sub details */
+.post_subDetails {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_likes,
+.post_comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-svg path {
+  fill: white;
+}
+
+.comment-svg path {
+  stroke: white;
+}
+
+.svgtest {
+  border: 2px solid red;
+}
+
+.svgtest > svg > path {
+  fill: red;
+}
